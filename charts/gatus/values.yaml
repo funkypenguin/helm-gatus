@@ -47,9 +47,9 @@ persistence:
 
 configmap:
   config:
-    # -- Store homer configuration as a ConfigMap
+    # -- Store gatus configuration as a ConfigMap
     enabled: true
-    # -- Homer configuration. See [image documentation](https://github.com/bastienwirtz/homer/blob/main/docs/configuration.md) for more information.
+    # -- gatus configuration. See [image documentation](https://github.com/bastienwirtz/gatus/blob/main/docs/configuration.md) for more information.
     # @default -- See values.yaml
     data:
       config.yaml: |
