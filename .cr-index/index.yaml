@@ -1,0 +1,30 @@
+apiVersion: v1
+entries:
+  gatus:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: v3.8.0
+    created: "2022-05-15T18:28:52.378758+12:00"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: A dead simple static HOMepage for your servER to keep your services
+      on hand, from a simple yaml configuration file.
+    digest: 59aab2a47dfc3d3797b59cad957116d273405b1d9085856807ccc04c811014b3
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/gatus
+    icon: https://github.com/TwiN/gatus/raw/master/.github/assets/logo-with-dark-text.png
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: davidy@funkypenguin.co.nz
+      name: funkypenguin
+    name: gatus
+    sources:
+    - https://github.com/TwiN/gatus
+    urls:
+    - https://github.com/funkypenguin/helm-gatus/releases/download/gatus-1.0.0/gatus-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-05-15T18:28:52.378761+12:00"
