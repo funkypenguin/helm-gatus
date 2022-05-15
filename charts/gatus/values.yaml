@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: twinproduction/gatus
   # -- image tag
-  tag: 3.8.0
+  tag: v3.8.0
   # -- image pull policy
   pullPolicy: IfNotPresent
 
@@ -25,7 +25,7 @@ service:
   main:
     ports:
       http:
-        port: 80
+        port: 8080
 
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
@@ -48,8 +48,8 @@ persistence:
 configmap:
   config:
     # -- Store gatus configuration as a ConfigMap
-    enabled: true
-    # -- gatus configuration. See [image documentation](https://github.com/bastienwirtz/gatus/blob/main/docs/configuration.md) for more information.
+    enabled: false
+    # -- gatus configuration. See [image documentation](https://github.com/TwiN/gatus#configuration) for more information.
     # @default -- See values.yaml
     data:
       config.yaml: |
